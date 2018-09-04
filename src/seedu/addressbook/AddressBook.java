@@ -71,8 +71,7 @@ public class AddressBook {
     private static final String MESSAGE_COMMAND_HELP_PARAMETERS = "\tParameters: %1$s";
     private static final String MESSAGE_COMMAND_HELP_EXAMPLE = "\tExample: %1$s";
     private static final String MESSAGE_DELETE_PERSON_SUCCESS = "Deleted Person: %1$s";
-    private static final String MESSAGE_DISPLAY_PERSON_DATA = "%1$s Phone Number: %2$s  Email: %3$s";
-    private static final String MESSAGE_DISPLAY_NAME = "Name: %1$s";
+    private static final String MESSAGE_DISPLAY_PERSON_DATA = "%1$s  Phone Number: %2$s  Email: %3$s";
     private static final String MESSAGE_DISPLAY_LIST_ELEMENT_INDEX = "%1$d. ";
     private static final String MESSAGE_GOODBYE = "Exiting Address Book... Good bye!";
     private static final String MESSAGE_INVALID_COMMAND_FORMAT = "Invalid command format: %1$s " + LS + "%2$s";
@@ -82,9 +81,9 @@ public class AddressBook {
                                                             + LS + "\tjava AddressBook [custom storage file path]";
     private static final String MESSAGE_INVALID_PERSON_DISPLAYED_INDEX = "The person index provided is invalid";
     private static final String MESSAGE_INVALID_STORAGE_FILE_CONTENT = "Storage file has invalid content";
-    private static final String MESSAGE_PERSON_NOT_IN_ADDRESSBOOK = "Person could not be found in address book";
+    private static final String MESSAGE_PERSON_NOT_IN_ADDRESSBOOK = "Error: person not be found in address book";
     private static final String MESSAGE_ERROR_CREATING_STORAGE_FILE = "Error: unable to create file: %1$s";
-    private static final String MESSAGE_ERROR_MISSING_STORAGE_FILE = "Storage file missing: %1$s";
+    private static final String MESSAGE_ERROR_MISSING_STORAGE_FILE = "Error: storage file missing: %1$s";
     private static final String MESSAGE_ERROR_READING_FROM_FILE = "Unexpected error: unable to read from file: %1$s";
     private static final String MESSAGE_ERROR_WRITING_TO_FILE = "Unexpected error: unable to write to file: %1$s";
     private static final String MESSAGE_PERSONS_FOUND_OVERVIEW = "%1$d persons found!";
@@ -826,6 +825,7 @@ public class AddressBook {
         ALL_PERSONS.clear();
         ALL_PERSONS.addAll(persons);
     }
+
 
     /*
      * ===========================================
